@@ -1,20 +1,46 @@
 /* Structure */
 body{
-    background: green;
+    background: #708090;
     font-family:Arial, Helvetica, sans-serif;
 }
-div{
-    background: white;
-    padding: 5px;
+#content{ /*the # means id for divs and sub-divs */
+    background: #ece1d9;
+    padding: 5px; /*padding between the div and the top of the page */
     margin: 20px auto; /*auto centers the div within the body */
-    width: 70%;
+    width: 70%; /*div takes up only 70% of the page */
+    border-radius: 10px; /*this rounds the corners */
 }
 
+/*Navigation*/
+#main-nav ul{
+    padding-left: 0; /*removes the left padding or indent*/
+    width: fit-content;
+    margin: auto; /*this centers everything +the width above*/
+}
+
+#main-nav li{
+    list-style-type: none; /*no bullets*/
+    display:inline-block; /*appear on one line*/
+}
+
+#main-nav a{
+    text-decoration: none; /*this gets rid of underline*/
+    background: #BF30F2;
+    color: white;
+    padding: 5px;
+    margin:5px;
+    border-radius: 2px;
+}
+
+#main-nav a:hover{
+    background: black;
+    color: #708090;
+}
 
 /* Typography */
 h1 {
-    color: red;
+    color: #797979;
 }
 p{
-    color:blue;
+    color:black;
 }
