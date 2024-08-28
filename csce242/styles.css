@@ -2,6 +2,28 @@ body{
     background: #708090;
     font-family:Arial, Helvetica, sans-serif;
 }
+#content{
+    background: #ece1d9;
+    padding: 10px;
+    margin: 15px auto;
+    width: 75%;
+    border-radius: 8px;
+}
+#Links a{
+    text-decoration: none; 
+    background: #BF30F2;
+    color: white;
+    margin: 10x;
+    border-radius: 2px;
+}
+#Links li{
+    list-style-type: none;
+}
+
+#Links a:hover{
+    background: black;
+    color: #708090;
+}
 
 h1 {
     color: #797979;
