@@ -9,7 +9,7 @@ body {
 }
 
 #main-header {
-    background-color: #ffd1dc;
+    background-color: lightcoral;
     padding: 0.5rem;
     text-align: center;
 }
@@ -20,11 +20,18 @@ body {
     margin: 0;
     display: flex;
     justify-content: space-around;
+    border-right: 1px lightcoral;
+}
+
+#main-nav li{
+    list-style: none;
+    border-bottom: 0.5px solid lightcoral;
 }
 
 #main-nav a {
-    color: #333;
     text-decoration: none;
+    padding: 5px;
+    color:azure;
 }
 
 main {
@@ -36,16 +43,20 @@ main {
 .content {
     flex: 3;
     background-color: #c1e1ec;
-    padding: 1rem;
+    padding: 5px;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(200px, 1fr));
-    gap: 1rem;
+    gap: 5px;
 }
 
-article {
+.grid h2{
+    text-align: center;
+}
+
+.grid article {
     background-color: #c1e1ec;
     padding: 5px;
 }
@@ -75,22 +86,58 @@ aside {
     margin-bottom: 5px;
 }
 
+.big-ideas{
+    background-color: lightcoral;
+}
+
 .big-ideas article {
+    display: flex;
     margin-bottom: 0px;
 }
 
-footer {
-    background-color: #c1e1ec;
+.big-ideas h2{
+    text-align: left;
+    padding: 10px;
+    padding-left: 55px;
+}
+
+.big-ideas h3{
+    text-align: left;
+}
+
+#footer {
+    background-color: lightcoral;
     color: #333;
     text-align: center;
     padding: 5px;
 }
 
-@media (max-width: 600px) {
-    main {
+@media only screen and (max-width: 768px) {
+    aside {
+        width:100%;
+    }
+    .columns{
+        display: flex;
+    }
+    #main-nav li{
+        border-bottom: 1px solid azure;
+    }
+    #main-nav ul{
         flex-direction: column;
     }
-    .content, aside {
-        flex: none;
+    .links{
+        flex:1;
+    }
+    .grid{
+        grid-template-columns: 1frn;
+    }
+    #main-content{
+        flex-direction: column;
+    }
+    .big-ideas article{
+        flex-direction: column;
+    }
+    .big-ideas img{
+        margin-bottom: 10px;
     }
 }
