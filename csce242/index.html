@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <title> Main Page</title>
-    </head>
-    <body>
-        <div id="content">
-            <h1> CSCE242: Page Shawn Chau</h1>
-            <p> This will serve as my main html page for CSCE242: Web Applications. This page will serve as a holding center for assignments given by Professor Plante. Once completed, I will provide a link on this page to my assignments for viewing.</p>
-            <h2> Assignments Page</h2>
-            <nav id="Links">
-                <ul>
-                    <li><a href="Assignments/Assignment_1/index.html">1. Basic Html</a></li>
-                    <li><a href="Assignments/Assignment_2/index.html">2. Basic CSS</a></li>
-                    <li><a href="Assignments/Assignment_3/index.html">3. Flex Page Layout</a></li>
-                </ul>
-            </nav>
-        
+<head>
+    <title>Main Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="left-align">Shawn Chau</h1>
+        <h2>CSCE 242: Client-Server Computing</h2>
+        <h3>Assignments</h3>
+    </header>
+    <section class="assignments">
+        <div class="assignment">
+            <h4><a href="Assignments/Assignment_1/index.html">Assignment 1 - Basic Html</a></h4>
+            <img src="images/vietnam.jpg" alt="Vietnam Website" class="assignment-image">
+            <p>I created a website about Vietnam and its different cultures and traditions. I touched on topics such as Vietnam's landscapes, food, music, and tradition. I used basic html with no css styling.</p>
         </div>
-    </body>
+        <div class="assignment">
+            <h4><a href="Assignments/Assignment_2/index.html">Assignment 2 - Basic CSS</a></h4>
+            <img src="images/mexico.jpg" alt="Mexico Website" class="assignment-image">
+            <p>I created a website about Mexico and its different cultures and traditions. I touched on topics such as traditional Mexican cuisine and music. I included tables, images, and lists with basic css styling.</p>
+        </div>
+        
+        <div class="assignment">
+            <h4><a href="Assignments/Assignment_3/index.html">Assignment 3 - Flex Page layout</a></h4>
+            <img src="images/flexpage.jpg" alt="Flex Page Layout" class="assignment-image">
+            <p>I recreated a simple page layout given to us by Professor Plante and used CSS styling and flexbox to format it properly. I used elements such as flex, padding, width, and other elements of styling. I also used Media Query to allow the webpage to display horizontally on large screens and vertically on smaller screens.</p>
+        </div>
+    </section>
+</body>
 </html>
