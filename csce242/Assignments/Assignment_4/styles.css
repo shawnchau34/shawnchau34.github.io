@@ -6,7 +6,7 @@ body{
 
 #user-nav {
     padding:1px;
-}  
+}
 
 #main-header {
     background: black;
@@ -29,7 +29,7 @@ body{
     width: 100%;
 }
 
-#educational-investment button:hover, #programs button:hover {
+#educational-investment button:hover, #programs button:hover #next-step button:hover{
     background-color: white;
     color:#73000A;
     border: 2px solid #73000A;
@@ -53,11 +53,12 @@ body{
 #educational-investment p{
     text-align: center auto;
     color: black;
+    font-size:medium;
 }
 
 #educational-investment button{
     display: block;
-    margin: 0;
+    margin: 0 auto;
 }
 
 #programs button {
@@ -84,8 +85,8 @@ body{
 }
 
 #column3 {
-    margin-left: 2%;
-    margin-right: 10%;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
     justify-content: center;
 }
 
@@ -112,6 +113,29 @@ body{
     margin-left:auto;
     margin-right:auto;
     width: 300px;
+}
+
+#next-step{
+    background-color: black;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    padding: 20px;
+
+}
+
+#next-step p{
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#next-step button{
+    background-color:#73000A ;
+    border: 2px solid white;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
 }
 
 #main-footer {
@@ -202,7 +226,7 @@ body {
 }
 
 #programs h1, #educational-investment h1{
-    font-size: 2.7em;
+    font-size: 1.7em;
 }
 
 #programs p {
