@@ -76,11 +76,13 @@ body{
     background-color: #73000A;
     padding: 20px;
     width: fit-content;
+    color: white;
+    font-size: medium;
 }
 
 .column2 {
     padding: 15px;
-    justify-content: center;
+    display: flex;
     margin-left: 3%;
 }
 
@@ -117,8 +119,6 @@ body{
 
 #next-step{
     background-color: black;
-    display: flex;
-    flex-direction:row;
     align-items: center;
     padding: 20px;
 
@@ -226,7 +226,7 @@ body {
 }
 
 #programs h1, #educational-investment h1{
-    font-size: 1.7em;
+    font-size: 2.0em;
 }
 
 #programs p {
