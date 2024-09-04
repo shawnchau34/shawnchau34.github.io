@@ -138,6 +138,10 @@ body{
     color: white;
 }
 
+#next-step img{
+    padding: 10px;
+}
+
 #main-footer {
     background:#73000A;
 }
@@ -331,9 +335,14 @@ body {
     overflow:hidden;
     }
 
-    .column2, #column3 {
+    #column3 {
     flex:1;
     flex-direction: column;
+    }
+
+    .column2{
+        flex: 1;
+        flex-direction: row;
     }
 
     #educational-investment {
