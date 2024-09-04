@@ -48,6 +48,35 @@ header h3 {
     color: black;
     font-weight: normal;
 }
+
+/*Projects*/
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 15px auto;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: #f0ffe6;
+    padding: 10px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.project h4{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.project a{
+    text-decoration: none;
+    color: black;
+    font-weight: none;
+}
+
 /* Image Styling */
 .assignment img {
     width: 280px;
@@ -62,6 +91,22 @@ header h3 {
     color: black;
     font-weight: normal;
 }
+
+.project img{
+    width: 280px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    font-weight: normal;
+}
+
 /* Mobile View */
 @media (max-width: 768px) {
     header h1 {
@@ -98,6 +143,26 @@ header h3 {
     .assignment p {
         font-size: 16px;
     }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 90%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+
+    .project img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project p{
+        font-size: 16px;
+    }
 }
 @media (max-width: 480px) {
     header h1 {
@@ -121,6 +186,14 @@ header h3 {
 
 
     .assignment p {
+        font-size: 14px;
+    }
+
+    .project h4{
+        font-size: 16px;
+    }
+
+    .project p {
         font-size: 14px;
     }
 }
