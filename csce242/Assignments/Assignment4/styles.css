@@ -296,7 +296,6 @@ body {
     margin-right: 5%;
     box-sizing: border-box;
     justify-content: space-between;
-    flex-direction: column;
     }
     .paying-col {
     margin: 20px;
