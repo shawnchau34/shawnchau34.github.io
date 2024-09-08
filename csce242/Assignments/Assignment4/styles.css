@@ -1,8 +1,15 @@
 
 /* Structure */
+html, body{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body{
     margin: 0px;
+    width: 100%;
     max-width:100%;
+    line-height: 1.6;
 }
 #user-nav {
     padding:1px;
@@ -40,6 +47,7 @@ body{
     width: 15%;
     display: inline;
     background-color: #ECECEC;
+    padding: 40px;
 }
 #educational-investment p{
     text-align: center auto;
@@ -55,9 +63,6 @@ body{
     border: 2px solid white;
     padding: 10px;
     width: fit-content;
-}
-#educational-investment {
-    background-color: #ECECEC;
 }
 #educational-investment button{
     background-color: #73000A;
@@ -78,6 +83,8 @@ body{
 }
 #paying {
     background-color: #FFFFFF;
+    width: 90%;
+    max-width: 100%;
 }
 #paying p{
     text-align: center;
@@ -94,7 +101,8 @@ body{
 #paying .flex-container {
     margin-left:auto;
     margin-right:auto;
-    width: 300px;
+    width: 90%;
+    max-width: 100%;
 }
 #next-step{
     background-color: black;
@@ -246,7 +254,8 @@ body {
     #logos {
     padding: 5px;
     justify-content: space-between;
-    margin: 10px 10%;
+    margin: 10px 0;
+    box-sizing: border-box;
     }
     .padding-right{
     padding-right:20px;
@@ -257,8 +266,8 @@ body {
     font-size: 3em;
     }
     #landing p {
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
     font-size: 1.1em;
     }
     #column {
@@ -285,7 +294,9 @@ body {
     #paying .flex-container {
     margin-left: 5%;
     margin-right: 5%;
+    box-sizing: border-box;
     justify-content: space-between;
+    flex-direction: column;
     }
     .paying-col {
     margin: 20px;
