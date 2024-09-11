@@ -1,0 +1,101 @@
+/*Structure*/
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+/*Header*/
+#main-header{
+    background-color: teal;
+    color: white;
+    padding: 20px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo{
+    display: flex;
+    align-items:center;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+#main-header h1{
+    margin: 0;
+    font-size: 30px;
+}
+
+#main-header ul{
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+}
+
+#main-header li{
+    margin-left: 20px;
+}
+
+#main-header li a{
+    color: white;
+    text-decoration: none;
+}
+
+/*Home Page*/
+#main-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#slideshow img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.section{
+    margin-bottom: 30px;
+}
+
+.section .flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.section h2{
+    color: #333;
+    margin-top: 0;
+}
+
+.section p{
+    flex: 1;
+    margin-right: 20px;
+}
+
+.section img{
+    max-width: 300px;
+    height: auto;
+}
+
+/*Footer*/
+#footer{
+    background-color: gray;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    color: black;
+}
