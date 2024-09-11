@@ -13,9 +13,10 @@ document.getElementById("image").addEventListener("click", ()=>{
 });
 
 //slider
-document.getElementById("boxslider").addEventListener("input", ()=>{
-    const sliderValue = event.target.value;
-    const box = document.getElementById("move");
+document.getElementById("boxslider").addEventListener("input", (event)=>{
+    const sliderValue = document.getElementById("boxslider").value;
+    const box = document.getElementById("movableBox");
 
-    box.style.left = '${sliderValue}';
+    box.style.left = `${sliderValue}px`;
+
 });
