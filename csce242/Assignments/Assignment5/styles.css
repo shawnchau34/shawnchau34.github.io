@@ -1,0 +1,88 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blanchedalmond;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#main-content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 25px;
+}
+
+h1 h2{
+    text-align: center;
+    color: darkolivegreen
+}
+
+#count, #image, .slider{
+    flex: 1;
+    background-color: slategray;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 250px;
+}
+
+.card-count{
+    background-color: #5f9ea0;
+    color: white;
+}
+
+.card-count h3{
+    margin-top: 0;
+    color: #2980b9;
+}
+
+.card-count p{
+    font-size: 70px;
+    margin: 0;
+    text-align: center;
+}
+
+.rdm-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+
+.sliderbox{
+    width: 100%;
+    margin: 10px 0
+}
+
+.slider-box{
+    width: 50px;
+    height: 200px;
+    background-color: lightgoldenrodyellow;
+    position: relative;
+    left: 0;
+    transition: left 0.2s ease;
+}
+
+@media (max-width: 768px) {
+    #flex-container{
+        flex-direction: column;
+    }
+
+    #count, #image, .slider{
+        width: 100%;
+    }
+}
