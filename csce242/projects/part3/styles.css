@@ -24,7 +24,7 @@ body{
     font-size: 20px;
 }
 
-#main-header .columns{
+#main-header #main-nav .columns{
     display: flex;
     justify-content: space-between;
 }
@@ -132,7 +132,7 @@ body{
     padding: 5px 0;
     font-size: 14px;
     color: black;
-    position: relative;
+    position: bottom;
     height: 30px;
 }
 

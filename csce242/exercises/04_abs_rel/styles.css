@@ -41,7 +41,8 @@ img{
 
 #login-menu ul{
     padding-left: 0;
-    display: none;
+    display: flex;
+    flex-direction: row;
 }
 
 #login-menu li{

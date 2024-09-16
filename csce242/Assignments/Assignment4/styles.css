@@ -1,0 +1,377 @@
+/*Structure*/
+html, body{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0px;
+    width: 100%;
+    max-width:100%;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#login-nav{
+    padding: 1px;
+    font-weight: bold;
+}
+
+#main-header{
+    background: black;
+}
+
+.inline{
+    display: inline-block;
+    padding: 10px;
+    background-color: #73000a;
+}
+
+/*Nav Bar*/
+#main-nav{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    width: 100%;
+    background-color: #73000A;
+}
+
+#main-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none; 
+    width: 100%;
+}
+
+#main-nav li {
+    flex: 1; 
+    text-align: center; 
+}
+
+#main-nav a {
+    display: block;
+    padding: 1px;
+    color: white;
+    text-decoration: none; 
+    font-size: 0.5em; 
+}
+
+.title{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#login-nav{
+    width: fit-content;
+    padding: 10px;
+    position: absolute;
+    top: 1%;
+    right: 5%;
+}
+
+#login-nav ul{
+    display: flex;
+    padding-left: 0;
+    position: absolute;
+    top: 1%;
+    right: 5%;
+}
+
+#login-nav li{
+    display: flex;
+    padding-left: 0px;
+    margin: 0;
+    list-style-type: none;
+}
+
+#login-nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.5em;
+}
+
+#landing-image{
+    width: 100%;
+}
+
+#landing h2{
+    text-align: center;
+}
+
+/*Degree Programs*/
+#programs{
+    background-color: #73000A;
+    display: flex;
+    height: 500px;
+    width: 100%;
+}
+
+#programs img{
+    width: 50%;
+    object-fit: cover;
+}
+
+#programs .flex-container .column2{
+    width: 50%;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#programs .column2 button{
+    background-color: black;
+    color: white;
+}
+
+/*Educational Investment*/
+#educational-investment{
+    text-align: center;
+    background: #ECECEC;
+    padding: 20px;
+}
+
+#educational-investment .bold{
+    color: #73000A;
+    font-size: 2.5em;
+}
+
+#educational-investment p{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#educational-investment button{
+    background-color: #73000A;
+    padding: 20px;
+    width: fit-content;
+    color: white;
+    font-size: medium;
+}
+
+#educational-investment h2, .paying-col h3, #paying h2{
+    color: #73000A;
+}
+
+.column2{
+    display: flex;
+    padding: 15px;
+}
+
+.column3{
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    justify-content: center;
+}
+
+/*Paying*/
+#paying{
+    text-align: center;
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+#paying .paying-col{
+    flex: 1;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+}
+
+#paying .flex-container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 100%;
+}
+
+#paying .flex-container.paying-col p{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+#paying .flex-container .paying-col img{
+    margin-bottom: 8px;
+}
+
+#paying .flex-container .paying-col h3{
+    color: #73000A;
+}
+
+/*Next Step*/
+#next-step{
+    background-color: black;
+    display: flex;
+    align-items: stretch;
+    padding: 20px;
+    position: relative;
+}
+
+#next-step img{
+    width: 20%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    margin-right: 10px;
+}
+
+#next-step .step{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30%;
+    color: white;
+    width: 70%;
+}
+
+#next-step h1, #next-step p, #next-step button{
+    margin-bottom: 15px;
+    color: white;
+}
+
+#next-step .bold{
+    background-color: #73000A;
+    color: white;
+    padding: 10px;
+    font-size: 1.5em;
+    border: none;
+    display: inline-block;
+}
+
+.pad-right{
+    padding-right: 30px;
+}
+
+/*Footer*/
+#main-footer{
+    background: #73000A;
+}
+
+#logo-pic{
+    display: flex;
+    flex: 1;
+    gap: 10px
+}
+
+#logo-pic li{
+    list-style: none;
+}
+
+#all-links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+.main-flex{
+    display: flex;
+    width: 100%;
+}
+
+.flex1, .flex2, .flex3{
+    flex: 1;
+    padding: 10px;
+}
+
+#all-links ul{
+    list-style: none;
+}
+
+#all-links a{
+    text-decoration: none;
+    color: white;
+}
+
+#bottom-bar{
+    background: black;
+    color: white;
+}
+
+#bottom-bar p{
+    padding: 2px;
+    position: relative;
+    left: 10%;
+}
+
+/* Larger Resolutions */
+@media only screen and (min-width:768px) {
+    .horizontal-nav ul, .flex-container {
+    display: flex;
+    }
+    #login-nav ul {
+    position: relative;
+    top: 0%;
+    left:45%;
+    }
+    #main-nav li {
+    flex: 1;
+    }
+    #logos {
+    padding: 5px;
+    justify-content: space-between;
+    margin: 10px 0;
+    box-sizing: border-box;
+    }
+    .padding-right{
+    padding-right:20px;
+    }
+    #landing h1 {
+    margin-top: -40px;
+    margin-left: 10%;
+    font-size: 3em;
+    }
+    #landing p {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.1em;
+    }
+    #column {
+    flex: 4;
+    flex-direction: column;
+    }
+    #programs {
+    flex: 1;
+    min-width:0;
+    min-height:0;
+    overflow:hidden;
+    }
+    #column3 {
+    flex:1;
+    flex-direction: column;
+    }
+    .column2{
+        flex: 1;
+        flex-direction: row;
+    }
+    #educational-investment {
+    flex: 1;
+    }
+    #paying .flex-container {
+    margin-left: 5%;
+    margin-right: 5%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    }
+    .paying-col {
+    margin: 20px;
+    }
+    #logo-links {
+    position: absolute;
+    right: 5%;
+    }
+    .nextstep{
+        flex: 1;
+        flex-direction: column;
+    }
+}

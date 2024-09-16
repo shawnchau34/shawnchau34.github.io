@@ -21,3 +21,10 @@ myButton.onclick = () =>{
     document.getElementById("btn").innerHTML = "Goodbye everyone";
     document.getElementById("btn").classList.remove("special");
 }
+
+
+//Showing data from an input field//
+document.getElementById("txt-first-name").onkeyup = ()=>{
+    const textBox=document.getElementById("txt-first-name");
+    document.getElementById("result").innerText.textBox.value;
+}
