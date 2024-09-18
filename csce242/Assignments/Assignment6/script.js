@@ -1,3 +1,4 @@
+//Variables
 const slider = document.getElementById("slider");
 const colorslider = document.getElementById("color-slider");
 const colormessage = document.getElementById("color-message");
@@ -18,17 +19,15 @@ exercise2Link.addEventListener("click", (e) => {
     showExercise("picture-chooser");
 });
 
-slider.addEventListener("input", updateColor);
-
-smallbutton.addEventListener("click", () => showPicture("small"));
-mediumbutton.addEventListener("click", () => showPicture("medium"));
-largebutton.addEventListener("click", () => showPicture("large"));
-
+//showExercise function
 function showExercise(exercise) {
     document.getElementById('color-slider').style.display = 'none';
     document.getElementById('picture-chooser').style.display = 'none';
     document.getElementById(exercise).style.display = 'block';
 }
+
+//Slider
+slider.addEventListener("input", updateColor);
 
 function updateColor() {
     const redValue = slider.value;
@@ -47,15 +46,20 @@ function updateColorMessage(value) {
     }
 }
 
+//Picture
+smallbutton.addEventListener("click", () => showPicture("small"));
+mediumbutton.addEventListener("click", () => showPicture("medium"));
+largebutton.addEventListener("click", () => showPicture("large"));
+
 function showPicture(size) {
     let width, height;
     if (size === "small") {
             width = 200;
             height = 150;
-    } else if (size ="medium"){
+    } else if (size == "medium"){
         width = 400;
         height = 300;
-    } else if (size = "large"){
+    } else if (size == "large"){
         width = 600;
         height = 450;
     }
