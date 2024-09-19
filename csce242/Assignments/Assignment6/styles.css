@@ -14,6 +14,43 @@ header{
     margin-bottom: 15px;
 }
 
+#mobile-nav{
+    display: none;
+}
+
+#nav-items{
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-items li{
+    margin: 10px 0;
+}
+
+#nav-items a{
+    text-decoration: none;
+    color: darkolivegreen;
+}
+
+#arrow-nav{
+    font-size: 20px;
+    display: none;
+    position: fixed;
+    padding: 10px;
+}
+
+#arrow-toggle{
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#arrow-nav .open #nav-items{
+    display: block;
+}
+
 #main-content{
     max-width: 1000px;
     margin: 0 auto;
@@ -72,4 +109,15 @@ footer{
     color: darkgray;
     font-size: 0.9em;
     text-align: center;
+}
+
+@media (max-width: 768px){
+    #arrow-nav{
+        display: block;
+        font-size: 24px;
+    }
+
+    .exercise-links{
+        display: none;
+    }
 }

@@ -8,6 +8,8 @@ const smallbutton = document.getElementById("small");
 const mediumbutton = document.getElementById("medium");
 const largebutton = document.getElementById("large");
 const picturecontainer = document.getElementById("picture-container");
+const arrowToggle = document.getElementById("arrow-toggle");
+const arrowNav = document.getElementById("arrow-nav");
 
 exercise1Link.addEventListener("click", (e) => {
     e.preventDefault();
@@ -38,11 +40,11 @@ function updateColor() {
 
 function updateColorMessage(value) {
     if (value < 85) {
-        colormessage.textContent = "Calm";
+        colormessage.innerHTML = "Calm";
     } else if (value < 170) {
-        colormessage.textContent = "Cool";
+        colormessage.innerHTML = "Cool";
     } else {
-        colormessage.textContent = "Collected";
+        colormessage.innerHTML = "Collected";
     }
 }
 
@@ -66,5 +68,13 @@ function showPicture(size) {
     picturecontainer.innerHTML = `<img src="https://picsum.photos/${width}/${height}" alt="${size} random image">`;
 }
 
-// Initialize color slider
-updateColor();
+//Arrow Nav
+arrowToggle.addEventListener("click", ()=> {
+    arrowNav.classList.toggle("open");
+
+    if (arrowNav.classList.contains("open")){
+        arrowToggle.textContent= "^";
+    } else {
+        arrowToggle.textContent= "⌄";
+    }
+});
