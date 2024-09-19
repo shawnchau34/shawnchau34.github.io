@@ -47,10 +47,6 @@ header{
     margin-bottom: 10px;
 }
 
-#arrow-nav .open #nav-items{
-    display: block;
-}
-
 #main-content{
     max-width: 1000px;
     margin: 0 auto;

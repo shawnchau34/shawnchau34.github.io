@@ -9,7 +9,7 @@ const mediumbutton = document.getElementById("medium");
 const largebutton = document.getElementById("large");
 const picturecontainer = document.getElementById("picture-container");
 const arrowToggle = document.getElementById("arrow-toggle");
-const arrowNav = document.getElementById("arrow-nav");
+const menuItems = document.getElementById("nav-items");
 
 exercise1Link.addEventListener("click", (e) => {
     e.preventDefault();
@@ -70,11 +70,11 @@ function showPicture(size) {
 
 //Arrow Nav
 arrowToggle.addEventListener("click", ()=> {
-    arrowNav.classList.toggle("open");
-
-    if (arrowNav.classList.contains("open")){
-        arrowToggle.textContent= "^";
+    if (menuItems.style.display == "none" || menuItems.style.display =="") {
+        menuItems.style.display = "block";
+        arrowToggle.textContent = "^";
     } else {
-        arrowToggle.textContent= "⌄";
+        menuItems.style.display = "none";
+        arrowToggle.textContent = "⌄";
     }
 });
