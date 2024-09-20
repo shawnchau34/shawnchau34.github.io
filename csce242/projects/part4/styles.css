@@ -85,6 +85,9 @@ img{
     transition: 04s;
 }
 
+#main-nav.active{
+    display: block;
+}
 /*Home Page*/
 #main-content{
     margin: 0 auto;
