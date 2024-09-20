@@ -9,7 +9,7 @@ const mediumbutton = document.getElementById("medium");
 const largebutton = document.getElementById("large");
 const picturecontainer = document.getElementById("picture-container");
 const arrowToggle = document.getElementById("arrow-toggle");
-const menuItems = document.getElementById("nav-items");
+const navItems = document.getElementById("nav-items");
 
 exercise1Link.addEventListener("click", (e) => {
     e.preventDefault();
@@ -70,11 +70,18 @@ function showPicture(size) {
 
 //Arrow Nav
 arrowToggle.addEventListener("click", ()=> {
-    if (menuItems.style.display == "none" || menuItems.style.display =="") {
-        menuItems.style.display = "block";
-        arrowToggle.textContent = "^";
+    if (navItems.style.display == "none" || navItems.style.display == "") {
+        navItems.style.display = "block";
+        arrowToggle.innerHTML = "&#9660;";
     } else {
-        menuItems.style.display = "none";
-        arrowToggle.textContent = "⌄";
+        navItems.style.display = "none";
+        arrowToggle.innerHTML = "&#9650;";
+    }
+});
+
+window.addEventListener("resize", () =>{
+    if(window.innerWidth >768) {
+        navItems.style.display = "none";
+        arrowToggle.innerHTML = "&#9650;";
     }
 });

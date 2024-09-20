@@ -4,7 +4,7 @@ body{
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
-    display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
 }
@@ -12,10 +12,6 @@ body{
 header{
     text-align: center;
     margin-bottom: 15px;
-}
-
-#mobile-nav{
-    display: none;
 }
 
 #nav-items{
@@ -36,9 +32,13 @@ header{
 
 #arrow-nav{
     font-size: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
     display: none;
     position: fixed;
     padding: 10px;
+    top: 20px;
+    left: 20px;
 }
 
 #arrow-toggle{
@@ -108,12 +108,13 @@ footer{
 }
 
 @media (max-width: 768px){
-    #arrow-nav{
-        display: block;
-        font-size: 24px;
-    }
-
     .exercise-links{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    #arrow-nav {
         display: none;
     }
 }
