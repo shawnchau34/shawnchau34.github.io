@@ -1,16 +1,16 @@
 /*When the hamburger is clicked, toggle between showing
 and hiding the nav items*/
 
-//const hamburger = document.getElementById("toggle-nav");
+const hamburger = document.getElementById("toggle-nav");
 //toggle nav 
 
-//hamburger.onclick = () =>{
-    //document.getElementById("columns-hidden-small").
-//}
+hamburger.onclick = () =>{
+    document.getElementById("columns-hidden-small").
+}
 
-//document.querySelector("#toggle-nav").onclick = () =>{
-    //document.getElementById("nav-items").classList.toggle("hidden-small");
-//};
+document.querySelector("#toggle-nav").onclick = () =>{
+    document.getElementById("nav-items").classList.toggle("columns-hidden-small");
+};
 
 /*Don't go to links destination when clicked*/
 //document.getElementById("click-link").onclick = (event) =>{

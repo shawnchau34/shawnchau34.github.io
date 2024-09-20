@@ -67,6 +67,24 @@ img{
     text-align: center;
 }
 
+/*Hamburger Nav*/
+#hamburger-menu{
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#hamburger-menu div{
+    display: block;
+    width: 25px;
+    height: 5px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 04s;
+}
+
 /*Home Page*/
 #main-content{
     margin: 0 auto;
@@ -237,6 +255,10 @@ img{
     border-radius: 20px 20px 0px 0px;
 }
 
+#food-imgs .flex-container .columns{
+    gap: 20px;
+}
+
 /*Activities page*/
 #activities .flex-container{
     display: flex;
@@ -296,8 +318,11 @@ img{
 }
 
 @media (max-width: 768px) {
-    .flex-container,
-    .section .flex-container {
+    .flex-container .section .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-container{
         flex-direction: column;
     }
 
@@ -317,5 +342,23 @@ img{
 
     img{
         width: 100%;
+    }
+
+    #hamburger-menu{
+        display: block;
+    }
+
+    #main-nav{
+        display: none;
+    }
+
+    .logo{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #contact .flex-container{
+        flex-direction: column;
     }
 }
