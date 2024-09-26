@@ -1,0 +1,117 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    background-color: blanchedalmond;
+}
+
+#main-content{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+#main-header{
+    margin-bottom: 25px;
+}
+
+#main-header h1{
+    font-size: 36px;
+    margin: 0;
+    padding: 10px;
+    color: darkolivegreen;
+}
+
+#main-header h2{
+    font-size: 24px;
+    margin: 0;
+    padding: 5px;
+    color: darkolivegreen
+}
+
+footer{
+    text-align: center;
+}
+
+#flex-container{
+    padding: 20px;
+    padding-bottom: 40px;
+    position: relative;
+    margin: 0 auto;
+    background-color: slategray;
+    width: 60%;
+
+}
+
+#flex-container .input .box-header{
+    text-align: left;
+}
+
+.input{
+    padding: 10px;
+}
+
+.input label{
+    color: white;
+    margin-right: 10px;
+}
+
+#draw-button{
+    padding: 10px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#stars-box{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+#error-message{
+    margin-top: 10px;
+    color: #c9eec9;
+}
+
+.message-display{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+}
+
+.star{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid yellow;
+    cursor: pointer;
+}
+
+.star:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid yellow;
+}
+
+/*Learned how to do stars from 
+https://medium.com/@awwwesssooooome/how-to-create-a-starry-sky-background-with-css-e92307166540*/

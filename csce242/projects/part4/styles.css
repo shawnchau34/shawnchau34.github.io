@@ -5,6 +5,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
     overflow-x: hidden;
+    background-color: #f6f6f6;
 }
 
 img{
@@ -153,6 +154,14 @@ img{
     padding: 20px;
 }
 
+#vietnam-home {
+    background-color: #d3d9d4;
+}
+
+#popular-destinations{
+    background-color: #8cbdb3;
+}
+
 /*Footer*/
 #footer{
     background-color: gray;
@@ -175,6 +184,10 @@ img{
     gap: 40px;
 }
 
+#vietnam-history{
+    background-color: #e6f3f5;
+}
+
 #vietnam-history img{
     padding:20px;
 }
@@ -186,6 +199,11 @@ img{
 #vietnam-history p{
     text-align: center;
 }
+
+#landmarks{
+    background-color: #cce7ec;
+}
+
 
 #landmarks .flex-container .columns {
     width: 85%;
@@ -204,6 +222,7 @@ img{
 
 #landmark-imgs{
     text-align: center;
+    background-color: #e6f3f5;
 }
 
 #landmark-imgs .columns{
