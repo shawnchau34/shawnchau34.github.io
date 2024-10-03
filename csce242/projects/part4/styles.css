@@ -99,7 +99,21 @@ img{
     width: 100%;
     margin-bottom: 0;
     object-fit: cover;
-    overflow: hidden;
+}
+
+#slideshow .hidden{
+    display: none;
+}
+
+#slideshow img {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#slideshow img.active {
+    opacity: 1;
+    position: relative;
 }
 
 .section{
@@ -243,8 +257,16 @@ img{
     text-align: center;
 }
 
+#vietnamese-cuisine{
+    background-color: #FBFBFB;
+}
+
 #vietnamese-cuisine img{
     padding: 20px;
+}
+
+#appraisal{
+    background-color: #e6f2f2;
 }
 
 #appraisal .flex-container .columns{
@@ -266,6 +288,7 @@ img{
 #food-imgs{
     padding:30px;
     text-align: center;
+    background-color: #b3d9d9;
 }
 
 #food-imgs .columns{
@@ -290,12 +313,17 @@ img{
     gap: 25px;
 }
 
+#activities{
+    background-color: #FBFBFB;
+}
+
 #activities .flex-container .columns{
     width: 80%;
 }
 
 #activities-img{
     padding: 30px;
+    background-color: #cce7ec;
     text-align: center;
 }
 
@@ -322,21 +350,42 @@ img{
     text-align: center;
 }
 
-#contact .flex-container {
-    display: flex;
-    flex: 1;
-}
-
-#contact{
-    margin-bottom: 15px;
-}
-
-#contact .social{
-    display: flex;
-}
-
 #contact .social img{
     padding-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+#main-content #story{
+    margin-bottom: 25px;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-info{
+    flex: 1;
+    padding-right: 20px;
+    font-size: large;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.contact-img{
+    flex-shrink: 0;
+}
+
+.contact-img img{
+    max-width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -351,6 +400,10 @@ img{
     #main-header ul {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    #contact{
+        margin-bottom: 40px;
     }
 
     #main-header li {
@@ -382,5 +435,72 @@ img{
 
     #contact .flex-container{
         flex-direction: column;
+    }
+
+    #food-imgs .flex-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #food-imgs .columns{
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    #activities-img .flex-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #activities-img .columns{
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    #activities .flex-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #activities .flex-container .columns,
+    #activities .flex-container .media{
+        max-width: 100%;
+    } 
+
+    #activities .flex-container .media img{
+        width: 100%;
+        height: auto;
+    }
+
+    #activities-img .flex-container{
+        flex-direction: column;
+    }
+
+    #activities-img .columns{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #activities-img .columns img{
+        width: 100%;
+        height: auto;
+    }
+
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .contact-info{
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contact-img{
+        width: 100%;
+        text-align: center;
     }
 }
