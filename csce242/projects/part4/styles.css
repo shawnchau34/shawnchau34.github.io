@@ -180,11 +180,12 @@ img{
 #footer{
     background-color: gray;
     text-align: center;
-    padding: 5px 0;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-size: 14px;
     color: black;
     height: 30px;
-    padding-top: 15px;
 }
 
 /*Discover page*/
@@ -196,6 +197,10 @@ img{
 #landmark-imgs .flex-container{
     text-align: center;
     gap: 40px;
+}
+
+#landmark-imgs{
+    padding-top: 15px;
 }
 
 #vietnam-history{
@@ -222,6 +227,7 @@ img{
 #landmarks .flex-container .columns {
     width: 85%;
 }
+
 
 #landmarks h2{
     text-align: center;
@@ -315,6 +321,7 @@ img{
 
 #activities{
     background-color: #FBFBFB;
+    text-align: center;
 }
 
 #activities .flex-container .columns{
@@ -435,6 +442,21 @@ img{
 
     #contact .flex-container{
         flex-direction: column;
+    }
+
+    #landmarks .flex-container .columns iframe{
+        overflow-x: hidden;
+    }
+
+    .video-container{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    iframe{
+        width: 100%;
+        height: auto;
+        align-items: center;
     }
 
     #food-imgs .flex-container{
