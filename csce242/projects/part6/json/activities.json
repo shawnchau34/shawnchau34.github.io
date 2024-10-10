@@ -1,0 +1,38 @@
+[
+    {
+        "_id": 1,
+        "title": "Heritage Line Ylang Cruise",
+        "img_name": "images/cruise.jpg",
+        "description": "Discover the stunning waters and limestone karsts of Ha Long Bay aboard the luxurious Heritage Ylang Cruise.",
+        "link": "https://www.booking.com/hotel/vn/heritage-line-ylang-cruise.en.html",
+        "city": "Ha Long Bay",
+        "difficulty_level": "Easy"
+    },
+    {
+        "_id": 2,
+        "title": "The Marble Mountains",
+        "img_name": "images/mm.jpg",
+        "description": "A group of five limestone hills located in Da Nang, known for their beautiful caves and Buddhist sanctuaries.",
+        "link": "https://www.tripadvisor.com/Attraction_Review-g298085-d454980-Reviews-The_Marble_Mountains-Da_Nang.html",
+        "city": "Da Nang",
+        "difficulty_level": "Moderate"
+    },
+    {
+        "_id": 3,
+        "title": "The Old Quarter",
+        "img_name": "images/quarter.jpg",
+        "description": "Explore the bustling streets of Hanoi's Old Quarter, filled with history, traditional shops, and vibrant street life.",
+        "link": "https://vietnam.travel/things-to-do/explore-old-quarter-your-way",
+        "city": "Hanoi",
+        "difficulty_level": "Easy"
+    },
+    {
+        "_id": 4,
+        "title": "Cat Ba Island",
+        "img_name": "images/island.jpg",
+        "description": "Cat Ba Island is the largest island in the Ha Long Bay archipelago, known for its rugged limestone hills and diverse wildlife.",
+        "link": "https://www.tripadvisor.com/Attraction_Review-g737051-d386683-Reviews-Cat_Ba_Island-Cat_Ba_Hai_Phong.html",
+        "city": "Cat Ba",
+        "difficulty_level": "Hard"
+    }
+]

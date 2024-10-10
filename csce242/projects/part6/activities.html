@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Discover Vietnam</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+
+    <body>
+
+        <header id="main-header">
+            <div class="flex-container">
+                <div class="logo">
+                    <a href="#"><img src="images/flag.jpg" width="100" height="100"></a>
+                    <h1> Vietnam: Discover Culture and Tradition </h1>
+                </div>
+                <button id="hamburger-menu" class="toggle-nav">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+                <nav id="main-nav">
+                    <ul class="columns">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html">Discover Vietnam</a></li>
+                        <li><a href="munchies.html">Munchies</a></li>
+                        <li><a href="#">Activities and Attractions</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="main-content">
+
+            <section id="activities">
+                <div class="flex-container">
+                    <div class="columns">
+                        <h2>Popular Activities</h2>
+                        <p>Vietnam offers a wide range of activities that cater to all types of travelers. Exploring the breathtaking landscapes of Ha Long Bay by boat is a must-do, where visitors can cruise among limestone karsts and emerald waters. Trekking in the terraced rice fields of Sapa allows for immersive cultural experiences with local ethnic minorities. Adventurers often visit the massive Phong Nha-Ke Bang National Park, home to some of the world’s largest caves, including Son Doong.</p>
+                        <p>Urban exploration in cities like Hanoi and Ho Chi Minh City offers a mix of history and modernity, with bustling markets, street food, and French colonial architecture. Additionally, tourists enjoy learning about Vietnam's war history at the Cu Chi Tunnels or relaxing on the beaches of Da Nang and Phu Quoc Island.</p>
+                        <p>Vietnam is a paradise for nature lovers and adventure seekers alike. Mui Ne offers thrilling sand dunes for sandboarding and kite surfing, while the Mekong Delta provides a peaceful experience of floating markets, lush landscapes, and river cruises. Hoi An, a UNESCO World Heritage site, invites visitors to stroll through its ancient streets, lit by colorful lanterns, and experience its rich cultural heritage through cooking classes and traditional craftsmanship. For those interested in wildlife, Cát Tiên National Park is home to diverse ecosystems and endangered species, ideal for trekking and birdwatching. Whether you’re exploring the dense jungles of Ba Be National Park or enjoying a scenic motorbike ride along the Hai Van Pass, Vietnam’s diverse landscapes and activities promise unforgettable experiences.</p>
+                    </div>
+                    <div class="media">
+                        <img src="images/activities.jpg" width="625" height="350">
+                        <iframe width="625" height="350" src="https://www.youtube.com/embed/VllrbpyPK60?si=zNzQQckMs9ncvl5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </div>
+                </div>
+            </section>
+
+            <section id="activities-img">
+                <div class="flex-container">
+
+                    <section class="columns">
+                        <div class="cruise">
+                            <img src="images/cruise.jpg" height="100" width="300">
+                            <h3>Heritage Line Ylang Cruise</h3>
+                        </div>
+                    </section>
+                    
+                    <section class="columns">
+                        <div class="cruise">
+                            <img src="images/mm.jpg" width="300" height="100">
+                            <h3>The Marble Mountains</h3>
+                        </div>
+                    </section>
+
+                    <section class="columns">
+                        <div class="cruise">
+                            <img src="images/island.jpg" width="300" height="100">
+                            <h3>Cat Ba Island</h3>
+                        </div>
+                    </section>
+                    
+                    <section class="columns">
+                        <div class="cruise">
+                            <img src="images/quarter.jpg" width="300" height="100">
+                            <h3>The Old Quarter</h3>
+                        </div>
+                    </section>
+                    
+                </div>
+            </section>
+        </div>
+
+        <div id="info-modal" class="modal">
+            <div class="modal-content">
+                <button class="close-btn">&times;</button>
+                <img id="modal-image" src="" alt="Image" >
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+                <a id="modal-link" href="#" target="blank" class="modal-link">Learn More!</a>
+            </div>
+        </div>
+
+        <footer>
+            <div id="footer">
+                <p>&copy;Discover Vietnam | 2024 |</p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

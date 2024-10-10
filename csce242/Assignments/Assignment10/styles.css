@@ -1,0 +1,108 @@
+:root {
+    --bg-color: #fff0e6;
+    --card-bg: #ffffff; 
+    --hover-bg: rgba(0, 0, 0, 0.5); 
+    --text-color: #ff85a2; 
+    --hover-text-color: #f8f8f8; 
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-content {
+    text-align: center;
+    max-width: 1000px;
+    width: 100%;
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: cyan;
+    font-size: 36px;
+}
+
+.ice-cream-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.ice-cream-card {
+    flex: 0 1 calc(25% - 15px); 
+    max-width: calc(25% - 15px);
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.ice-cream-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ice-cream-card:hover {
+    transform: scale(1.05);
+}
+
+.ice-cream-name {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    background: var(--hover-bg);
+    color: var(--hover-text-color);
+    text-align: center;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.ice-cream-card:hover .ice-cream-name {
+    opacity: 1;
+}
+
+.credits {
+    margin-top: 15px;
+    color: #777;
+    font-size: 0.85em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+    .ice-cream-card {
+        flex: 0 1 calc(33.33% - 15px);
+        max-width: calc(33.33% - 15px);
+    }
+}
+
+@media (max-width: 768px) {
+    .ice-cream-card {
+        flex: 0 1 calc(50% - 15px);
+        max-width: calc(50% - 15px);
+    }
+}
+
+@media (max-width: 480px) {
+    .ice-cream-card {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+}
