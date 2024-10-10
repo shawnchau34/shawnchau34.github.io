@@ -1,19 +1,19 @@
-//hamburger menu
-document.addEventListener('DOMContentLoaded',() =>{
+// Hamburger menu
+document.addEventListener('DOMContentLoaded', () => {
     const hamburger = document.getElementById('hamburger-menu');
     const nav = document.getElementById('main-nav');
 
-    hamburger.addEventListener('click',() =>{
+    hamburger.addEventListener('click', () => {
         nav.classList.toggle('active');
     });
 });
 
-//slideshow images
+// Slideshow images
 const slide = () => {
     const currentImage = document.querySelector("#slideshow img.active");
     let nextImage = currentImage.nextElementSibling;
 
-    // reached the end of the list
+    // Reached the end of the list
     if (nextImage === null) {
         nextImage = document.querySelector("#slideshow img:first-child");
     }
@@ -24,70 +24,76 @@ const slide = () => {
 
 setInterval(slide, 4000);
 
-// Function to fetch data from a JSON file
+// Fetch data from a JSON file
 const getData = async (url) => {
     try {
         const response = await fetch(url);
         return await response.json();
     } catch (error) {
-        console.error(error);
+        console.error('Error fetching data:', error);
     }
 };
 
-//Updated Modal Feature to parse through JSON; used pieces from Assignment10,9, and in-class exercise
+// Function to show items 
 const showItems = async (url, sectionId) => {
     const items = await getData(url);
     const section = document.getElementById(sectionId);
     if (!section) return;
 
-    section.innerHTML = "";
+    const itemDivs = {
+        'Ho Chi Minh City': section.querySelector('.hcmcity'),
+        'Saigon': section.querySelector('.saigon'),
+        'Hanoi': section.querySelector('.hanoi'),
+        'Hạ Long Bay': section.querySelector('.hlbay'),
+        'Bánh mì': section.querySelector('.banhmi'),
+        'Phở': section.querySelector('.pho'),
+        'Bún bò Huế': section.querySelector('.bbh'),
+        'Bún thịt nướng': section.querySelector('.btn'),
+        'Heritage Line Ylang Cruise': section.querySelector('.cruise'),
+        'The Marble Mountains': section.querySelector('.mm'),
+        'Cat Ba Island': section.querySelector('.island'),
+        'The Old Quarter': section.querySelector('.quarter')
+    };
 
     items.forEach(item => {
-        const card = document.createElement("div");
-        card.classList.add("item");
+        const itemDiv = itemDivs[item.title];
+        if (itemDiv) {
+            // Update image and title
+            const img = itemDiv.querySelector('img');
+            const titleElement = itemDiv.querySelector('h3');
 
-        const img = document.createElement("img");
-        img.src = item.img_name;
-        img.alt = item.title;
-        img.height = 100;
-        img.width = 300;
+            img.src = item.img_name;
+            img.alt = item.title;
+            titleElement.textContent = item.title;
 
-        const titleElement = document.createElement("h3");
-        titleElement.textContent = item.title;
+            // Modal on click
+            itemDiv.addEventListener('click', () => {
+                const modal = document.getElementById("info-modal");
+                const modalTitle = document.getElementById("modal-title");
+                const modalDescription = document.getElementById("modal-description");
+                const modalImage = document.getElementById("modal-image");
+                const modalLink = document.getElementById("modal-link");
 
-        card.appendChild(img);
-        card.appendChild(titleElement);
-        section.appendChild(card);
+                modalTitle.innerText = item.title;
+                modalDescription.innerHTML = `
+                    <p>${item.description}</p>
+                    ${item.attractions ? `<p><strong>Attractions:</strong> ${item.attractions.join(', ')}</p>` : ''}
+                    ${item.historical_significance ? `<p><strong>Historical Significance:</strong> ${item.historical_significance}</p>` : ''}
+                    ${item.ingredients ? `<p><strong>Ingredients:</strong> ${item.ingredients.join(', ')}</p>` : ''}
+                    ${item.region ? `<p><strong>Region:</strong> ${item.region}</p>` : ''}
+                    ${item.city ? `<p><strong>City:</strong> ${item.city}</p>` : ''}
+                `;
+                modalImage.src = item.img_name;
+                modalLink.href = item.link;
+                modalLink.textContent = "Learn More";
 
-        //Modal on click
-        card.addEventListener('click', () => {
-            const modal = document.getElementById("info-modal");
-            const modalTitle = document.getElementById("modal-title");
-            const modalDescription = document.getElementById("modal-description");
-            const modalImage = document.getElementById("modal-image");
-            const modalLink = document.getElementById("modal-link");
-
-            // Update modal content
-            modalTitle.innerText = item.title;
-            modalDescription.innerHTML = `
-                <p>${item.description}</p>
-                ${item.attractions ? `<p><strong>Attractions:</strong> ${item.attractions.join(', ')}</p>` : ''}
-                ${item.historical_significance ? `<p><strong>Historical Significance:</strong> ${item.historical_significance}</p>` : ''}
-                ${item.ingredients ? `<p><strong>Ingredients:</strong> ${item.ingredients.join(', ')}</p>` : ''}
-                ${item.region ? `<p><strong>Region:</strong> ${item.region}</p>` : ''}
-                ${item.city ? `<p><strong>City:</strong> ${item.city}</p>` : ''}
-                ${item.difficulty_level ? `<p><strong>Difficulty Level:</strong> ${item.difficulty_level}</p>` : ''}
-            `;
-            modalImage.src = item.img_name;
-            modalLink.href = item.link;
-            modalLink.textContent = "Learn More";
-
-            modal.style.display = 'flex'; // Show modal
-        });
+                modal.style.display = 'flex';
+            });
+        }
     });
 };
 
-//Close the modal
+// Close modal
 const setupModalClose = () => {
     const modal = document.getElementById("info-modal");
     const closeBtn = document.querySelector(".close-btn");
@@ -95,7 +101,7 @@ const setupModalClose = () => {
     closeBtn.addEventListener('click', () => {
         modal.style.display = 'none';
     });
-    //close on window click
+
     window.addEventListener('click', (event) => {
         if (event.target === modal) {
             modal.style.display = 'none';
@@ -103,7 +109,7 @@ const setupModalClose = () => {
     });
 };
 
-// Load data for each section
+// Initialize the content
 const init = () => {
     showItems('json/landmarks.json', 'landmark-imgs');
     showItems('json/munchies.json', 'food-imgs');
