@@ -1,0 +1,94 @@
+:root {
+    --bg-color: #f4f4f9;
+    --card-bg: #ffffff; 
+    --primary-color: #ff7e67; 
+    --text-color: #333; 
+    --hover-bg: rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-content {
+    text-align: center;
+    max-width: 600px;
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    text-align: center;
+    font-size: large;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.cocktail-details {
+    margin-top: 20px;
+}
+
+.cocktail-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cocktail-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.cocktail-card h2 {
+    color: var(--primary-color);
+    margin: 0 0 10px 0;
+}
+
+.cocktail-card p {
+    margin: 0;
+    color: var(--text-color);
+}
+
+#main-footer{
+    position: absolute;
+    bottom: 10;
+    top: 20;
+    text-align: center;
+}
