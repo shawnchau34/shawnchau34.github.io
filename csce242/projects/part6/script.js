@@ -82,6 +82,7 @@ const showItems = async (url, sectionId) => {
                     ${item.ingredients ? `<p><strong>Ingredients:</strong> ${item.ingredients.join(', ')}</p>` : ''}
                     ${item.region ? `<p><strong>Region:</strong> ${item.region}</p>` : ''}
                     ${item.city ? `<p><strong>City:</strong> ${item.city}</p>` : ''}
+                    ${item.difficulty_level ? `<p><strong>Difficulty Level:</strong> ${item.difficulty_level}</p>` : ''}
                 `;
                 modalImage.src = item.img_name;
                 modalLink.href = item.link;
