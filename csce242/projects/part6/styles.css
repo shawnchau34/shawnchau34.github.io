@@ -522,6 +522,7 @@ img{
     #landmark-imgs .columns img{
         width: 100%;
         height: auto;
+        max-height: 200px;
     }
 
     .video-container{
@@ -547,6 +548,12 @@ img{
         margin-bottom: 20px;
     }
 
+    #food-imgs .columns img{
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+    }
+
     #activities-img .flex-container{
         flex-direction: column;
         align-items: center;
@@ -563,6 +570,7 @@ img{
         flex-direction: column;
         text-align: center;
     }
+    
 
     #activities .flex-container .columns,
     #activities .flex-container .media{
@@ -581,11 +589,13 @@ img{
     #activities-img .columns{
         width: 100%;
         margin-bottom: 20px;
+        max-width: 300px;
     }
 
     #activities-img .columns img{
         width: 100%;
         height: auto;
+        max-height: 200px;
     }
 
     .contact-container{
