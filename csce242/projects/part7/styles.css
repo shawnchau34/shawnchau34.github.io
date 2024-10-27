@@ -1,0 +1,706 @@
+/*Structure*/
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    overflow-x: hidden;
+    background-color: #f6f6f6;
+}
+
+img{
+    object-fit: cover;
+}
+
+/*Header*/
+#main-header{
+    background-color: teal;
+    color: white;
+    padding: 16px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0px;
+    font-size: 20px;
+}
+
+#main-header #main-nav .columns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items:center;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+#main-header h1{
+    margin: 0;
+    font-size: 30px;
+}
+
+#main-header ul{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+}
+
+#main-header li{
+    margin-left: 20px;
+}
+
+#main-header li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+/*Hamburger Nav*/
+#hamburger-menu{
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#hamburger-menu div{
+    display: block;
+    width: 25px;
+    height: 5px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 04s;
+}
+
+#main-nav.active{
+    display: block;
+}
+
+/*Modal*/
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content{
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    height: 70%;
+    max-width: 800px;
+    overflow-y: auto;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn{
+    font-size: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.close-btn:hover{
+    color: black;
+}
+
+#modal-image{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.modal-link{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: teal;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.modal-link:hover{
+    background-color: darkcyan;
+}
+
+/*Home Page*/
+#main-content{
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#slideshow img{
+    width: 100%;
+    margin-bottom: 0;
+    object-fit: cover;
+}
+
+#slideshow .hidden{
+    display: none;
+}
+
+#slideshow img {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#slideshow img.active {
+    opacity: 1;
+    position: relative;
+}
+
+.section{
+    margin-bottom: 40px;
+}
+
+.section .flex-container{
+    display: flex;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.section h2{
+    color: #333;
+    margin-top: 5px;
+}
+
+.section p{
+    flex: 1;
+    margin-right: 10px;
+}
+
+.section img{
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+#vietnam-home img{
+    padding: 20px;
+}
+
+#vietnam-home h2{
+    text-align: center;
+}
+
+#vietnam-home p{
+    text-align: center;
+}
+
+#popular-destinations h2{
+    text-align: center;
+}
+
+#popular-destinations p{
+    text-align: center;
+}
+
+#popular-destinations img{
+    padding: 20px;
+}
+
+#vietnam-home {
+    background-color: #d3d9d4;
+}
+
+#popular-destinations{
+    background-color: #8cbdb3;
+}
+
+/*Footer*/
+#footer{
+    background-color: gray;
+    text-align: center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 14px;
+    color: black;
+    height: 30px;
+}
+
+/*Discover page*/
+#landmark-imgs .flex-container .columns{
+    display: flex;
+    flex-direction: row;
+}
+
+#landmark-imgs .flex-container{
+    text-align: center;
+    gap: 40px;
+}
+
+#landmark-imgs{
+    padding-top: 15px;
+}
+
+#vietnam-history{
+    background-color: #e6f3f5;
+}
+
+#vietnam-history img{
+    padding:20px;
+}
+
+#vietnam-history h2{
+    text-align: center;
+}
+
+#vietnam-history p{
+    text-align: center;
+}
+
+#landmarks{
+    background-color: #cce7ec;
+}
+
+
+#landmarks .flex-container .columns {
+    width: 85%;
+}
+
+
+#landmarks h2{
+    text-align: center;
+}
+
+#landmarks p{
+    text-align: center;
+}
+#landmarks iframe{
+    padding: 20px;
+}
+
+#landmark-imgs{
+    text-align: center;
+    background-color: #e6f3f5;
+}
+
+#landmark-imgs .columns{
+    background-color: lightseagreen;
+    border-radius: 20px;
+}
+
+#landmark-imgs .columns img{
+    border-radius: 20px 20px 0px 0px;
+}
+
+/*Munchies page*/
+#vietnamese-cuisine h2{
+    text-align: center;
+}
+
+#vietnamese-cuisine p{
+    text-align: center;
+}
+
+#vietnamese-cuisine{
+    background-color: #FBFBFB;
+}
+
+#vietnamese-cuisine img{
+    padding: 20px;
+}
+
+#appraisal{
+    background-color: #e6f2f2;
+}
+
+#appraisal .flex-container .columns{
+    width: 85%;
+}
+
+#appraisal h2{
+    text-align: center;
+}
+
+#appraisal p{
+    text-align: center;
+}
+
+#appraisal iframe{
+    padding: 20px;
+}
+
+#food-imgs{
+    padding:30px;
+    text-align: center;
+    background-color: #b3d9d9;
+}
+
+#food-imgs .columns{
+    background-color: lightseagreen;
+    border-radius: 20px;
+}
+
+#food-imgs .columns img{
+    border-radius: 20px 20px 0px 0px;
+}
+
+#food-imgs .flex-container .columns{
+    gap: 20px;
+}
+
+/*Activities page*/
+#activities .flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+#activities{
+    background-color: #FBFBFB;
+    text-align: center;
+}
+
+#activities .flex-container .columns{
+    width: 80%;
+}
+
+#activities-img{
+    padding: 30px;
+    background-color: #cce7ec;
+    text-align: center;
+}
+
+#activities-img .columns{
+    background-color: lightseagreen;
+    border-radius: 20px;
+}
+
+#activities-img .columns img{
+    border-radius: 20px 20px 0px 0px;
+}
+
+#activities-img .flex-container{
+    text-align: center;
+    gap: 50px;
+}
+
+/*About page*/
+#main-content #story h2{
+    text-align: center;
+}
+
+#main-content #story .flex-container p{
+    text-align: center;
+}
+
+#contact .social img{
+    padding-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+#main-content #story{
+    margin-bottom: 25px;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-info{
+    flex: 1;
+    padding-right: 20px;
+    font-size: large;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.contact-img{
+    flex-shrink: 0;
+}
+
+.contact-img img{
+    max-width: 100%;
+}
+
+/*Contact Form*/
+.contact-form {
+    max-width: 600px; /* Increased max-width for a slightly larger form */
+    margin: 20px auto;
+    padding: 20px; /* Slightly increased padding */
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-form h5 {
+    color: #005f5f;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-form p label {
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    text-align: left;
+}
+
+.contact-form p input,
+.contact-form p textarea {
+    width: 100%;
+    padding: 10px; /* Slightly larger padding for better visibility */
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px; /* Increased font size */
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.contact-form p input:focus,
+.contact-form p textarea:focus {
+    border-color: #007f7f;
+    outline: none;
+}
+
+#contact-submit-button {
+    background-color: #007f7f;
+    color: white;
+    padding: 12px 24px; /* Increased padding for a more prominent button */
+    border: none;
+    border-radius: 4px;
+    font-size: 18px; /* Increased font size for the button */
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#contact-submit-button:hover {
+    background-color: #006060;
+}
+
+#results p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+/* Responsive Flex Container */
+#contact-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+#contact-input p {
+    flex: 1 1 calc(50% - 10px); /* Two columns by default */
+    min-width: 250px;
+}
+
+@media (max-width: 768px) {
+    .flex-container .section .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-container{
+        flex-direction: column;
+    }
+
+    #main-header ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #contact{
+        margin-bottom: 40px;
+    }
+
+    #main-header li {
+        margin-bottom: 10px;
+    }
+
+    .section img {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    #hamburger-menu{
+        display: block;
+    }
+
+    #main-nav{
+        display: none;
+    }
+
+    .logo{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #contact .flex-container{
+        flex-direction: column;
+    }
+
+    #landmarks .flex-container .columns iframe{
+        overflow-x: hidden;
+    }
+
+    #landmarks-img .flex-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #landmarks-img .columns{
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    #landmark-imgs .columns img{
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+    }
+
+    .video-container{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    iframe{
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    #food-imgs .flex-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #food-imgs .columns{
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    #food-imgs .columns img{
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+    }
+
+    #activities-img .flex-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #activities-img .columns{
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    #activities .flex-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+
+    #activities .flex-container .columns,
+    #activities .flex-container .media{
+        max-width: 100%;
+    } 
+
+    #activities .flex-container .media img{
+        width: 100%;
+        height: auto;
+    }
+
+    #activities-img .flex-container{
+        flex-direction: column;
+    }
+
+    #activities-img .columns{
+        width: 100%;
+        margin-bottom: 20px;
+        max-width: 300px;
+    }
+
+    #activities-img .columns img{
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+    }
+
+    .contact-container{
+        flex-direction: column;
+    }
+
+    .contact-info{
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contact-img{
+        width: 100%;
+        text-align: center;
+    }
+    #contact-input p {
+        flex: 1 1 100%; /* Full width on smaller screens */
+    }
+
+    .contact-form {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    #contact-input p {
+        flex: 1 1 100%; /* Full width on smaller screens */
+    }
+}

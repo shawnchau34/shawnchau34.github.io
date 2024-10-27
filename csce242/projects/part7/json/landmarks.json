@@ -1,0 +1,37 @@
+[
+    {
+        "_id": 1,
+        "title": "Ho Chi Minh City",
+        "img_name": "images/hcm.jpg",
+        "description": "o Chi Minh City, formerly known as Saigon, is a bustling city with rich history and vibrant culture.",
+        "link": "https://www.tripadvisor.com/Tourism-g293925-Ho_Chi_Minh_City-Vacations.html",
+        "attractions": ["Ben Thanh Market", "Notre-Dame Cathedral Basilica", "War Remnants Museum"]
+    },
+    {
+        "_id": 2,
+        "title": "Saigon",
+        "img_name": "images/saigon.jpeg",
+        "description": "Explore the historic streets of Saigon, known for its French colonial architecture and vibrant culture.",
+        "link": "https://vietnam.travel/places-to-go/southern-vietnam/ho-chi-minh-city",
+        "attractions": ["Saigon Opera House", "Reunification Palace", "Saigon Central Post Office"],
+        "historical_significance": "Famous for its role as the capital of South Vietnam during the Vietnam War."
+    },
+    {
+        "_id": 3,
+        "title": "Hanoi",
+        "img_name": "images/temple.jpg",
+        "description": "The capital of Vietnam, Hanoi, is known for its centuries-old architecture and rich culture influenced by Southeast Asia.",
+        "link": "https://www.tripadvisor.com/Tourism-g293924-Hanoi-Vacations.html",
+        "attractions": ["Hoan Kiem Lake", "Old Quarter", "Temple of Literature"],
+        "historical_significance": "Served as the capital of Vietnam since the 11th century, rich in cultural heritage."
+    },
+    {
+        "_id": 4,
+        "title": "Hạ Long Bay",
+        "img_name": "images/discoverbay.jpg",
+        "description": "Hạ Long Bay is famous for its emerald waters and thousands of towering limestone islands topped with rainforests.",
+        "link": "https://whc.unesco.org/en/list/672/",
+        "attractions": ["Bai Tu Long Bay", "Cat Ba Island", "Sung Sot Cave"],
+        "historical_significance": "A UNESCO World Heritage site, it has great importance for its natural beauty and unique geology."
+    }
+]

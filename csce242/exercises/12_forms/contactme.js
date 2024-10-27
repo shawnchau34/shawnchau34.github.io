@@ -1,4 +1,4 @@
-/*
+
     try {
         const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
@@ -14,4 +14,4 @@
         console.log(error);
         result.innerHTML = "Sorry, your email couldn't be sent";
     }
-        */
+        
